@@ -1,0 +1,32 @@
+{
+    "globals": {
+        "console": false,
+        "log": false,
+        "Config":false
+    },
+
+    "node" : true,     
+    "es5" : true,
+    "browser" : false,
+
+    "asi" : false,
+    "bitwise" : true,
+    "boss" : false,
+    "curly": true,
+    "debug": false,
+    "eqeqeq": true,
+    "evil": false,
+    "newcap": true,
+    "noarg": true,
+    "noempty": false,
+    "nonew": false,
+    "nomen": true,
+    "onevar": true,
+    "plusplus": false,
+    "regexp": false,
+    "undef": true,
+    "sub": true,
+    "strict": false,
+    "white": true,
+    "unused": true
+}

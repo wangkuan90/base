@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<table id="app">
+			<tr>
+				<td>
+					id
+				</td>
+				<td>
+				    name
+				</td>
+				<td>
+					sex
+				</td>
+				<td>
+					age
+				</td>
+				<td>
+					class
+				</td>
+			</tr>
+			<tr v-for="item in list">
+				<td @click="lixiaclik(item, $index)">
+					{{item.id}}
+				</td>
+				<td>
+				    {{item.name}}
+				</td>
+				<td>
+					{{item.sex}}
+				</td>
+				<td>
+					{{item.age}}
+				</td>
+				<td>
+					{{item.class}}
+				</td>
+			</tr>
+		</table>
+		
+		<script src="vue.js"></script>
+		<script src="index.js"></script>
+	</body>
+</html>

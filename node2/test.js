@@ -1,0 +1,2 @@
+var a = '[{"itemDetail":["大型消费金融公司:2","P2P网贷:19","小额贷款公司:2","一般消费分期平台:8"],"platformCount":31,"riskLevel":"high","title":"身份证在多个网贷平台进行借款申请"},{"itemDetail":["大型消费金融公司:2","P2P网贷:20","小额贷款公司:2","一般消费分期平台:8"],"platformCount":32,"riskLevel":"high","title":"手机号在多个网贷平台进行借款申请"}]'
+console.log(JSON.parse(a));

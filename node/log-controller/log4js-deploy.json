@@ -1,0 +1,43 @@
+{
+	"appenders": [
+		{
+			"type": "console",
+			"category":"console"
+		}, {
+			"type": "dateFile",
+			"category": "logDebug",
+			"filename": "/home/h5_node/logs/debug/",
+			"pattern": "yyyy-MM-dd hh.log",
+			"absolute": true,
+			"alwaysIncludePattern": true
+		}, {
+			"type": "file",
+			"category": "logInfo",
+			"filename": "/home/h5_node/logs/info/info.log",
+			"absolute": true,
+			"maxLogSize": 20480,
+            "backups": 100
+		}, {
+			"type": "dateFile",
+			"category": "logWarn",
+			"filename": "/home/h5_node/logs/warn/",
+			"pattern": "yyyy-MM-dd hh.log",
+			"absolute": true,
+			"alwaysIncludePattern": true
+		}, {
+			"type": "dateFile",
+			"category": "logErr",
+			"filename": "/home/h5_node/logs/error/",
+			"pattern": "yyyy-MM-dd hh.log",
+			"absolute": true,
+			"alwaysIncludePattern": true
+		}
+	],
+	"replaceConsole": true,
+	"levels": {
+		"logDebug": "ALL",
+		"logInfo": "ALL",
+		"logWarn": "ALL",
+		"logErr": "ALL"
+	}
+}

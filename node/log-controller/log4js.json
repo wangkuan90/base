@@ -1,0 +1,39 @@
+{
+	"appenders": [
+		{
+			"type": "console",
+			"category":"console"
+		}, {
+			"type": "dateFile",
+			"pattern": "yyyy-MM-dd hh.log",
+			"category": "logDebug",
+			"filename": "../logs/debug/",
+			"alwaysIncludePattern": true
+		}, {
+			"type": "file",
+			"category": "logInfo",
+			"filename": "../logs/info/info.log",
+			"maxLogSize": 104857500,
+            "backups": 100
+		}, {
+			"type": "dateFile",
+			"pattern": "yyyy-MM-dd hh.log",
+			"category": "logWarn",
+			"filename": "../logs/warn/",
+			"alwaysIncludePattern": true
+		}, {
+			"type": "dateFile",
+			"pattern": "yyyy-MM-dd hh.log",
+			"category": "logErr",
+			"filename": "../logs/error/",
+			"alwaysIncludePattern": true
+		}
+	],
+	"replaceConsole": true,
+	"levels": {
+		"logDebug": "ALL",
+		"logInfo": "ALL",
+		"logWarn": "ALL",
+		"logErr": "ALL"
+	}
+}

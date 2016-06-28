@@ -1,0 +1,31 @@
+{
+  "name": "base",
+  "version": "1.0.0",
+  "description": "Including the common base",
+  "main": "jquery-1.11.0.js",
+  "dependencies": {
+    "express": "^4.10.8",
+    "log4js": "^0.6.32",
+    "redis": "^2.6.0-1",
+    "request": "^2.69.0",
+    "socket.io": "^1.4.5",
+    "serve-favicon": "^2.3.0",
+    "ws": "^1.1.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-markdown": "^1.2.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wangkuan90/base.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wangkuan90/base/issues"
+  }
+}

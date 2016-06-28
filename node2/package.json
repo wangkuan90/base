@@ -1,0 +1,4 @@
+{
+	"name": "global",
+	"main": "./console/global.js"
+}

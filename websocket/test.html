@@ -1,0 +1,35 @@
+<html>
+
+	<head>
+		<title>这是一个测试用例</title>
+	</head>
+
+	<body>
+
+		<p id="info"></p>
+		<p><input type="text" id="name" /></p>
+		<p><input type="text" id="msg" /></p>
+		<p><input type="button" id="sub" /></p>
+
+		<script type="text/javascript">
+			function $(str) {
+				return document.getElementById(str);
+			}
+			var name = $('name');
+			var msg = $('msg');
+			var info = $('info');
+			var sub = $('sub');
+			var ws = new WebSocket('ws://localhost:8080/');
+			ws.onopen = function() {
+				info.innerHTML = '连接成功建立<br/>';
+			}
+			ws.onmessage = function(e) {
+				info.innerHTML += e.data + '<br/>';
+			}
+			sub.onclick = function() {
+				ws.send(name.value + ":" + msg.value);
+			}
+		</script>
+	</body>
+
+</html>

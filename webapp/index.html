@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>test socket.io</title>
+	</head>
+
+	<body>
+
+		<script src="./socket.io.js"></script>
+		<script>
+//			var socket = io('http://127.0.0.1:8088/');
+//			socket.on('getNews', function(data) {
+//				console.log(data);
+////				socket.emit('my other event', {
+////					my: 'data'
+////				});
+//			});
+			var socket = io('http://192.168.219.108:31038/');
+			socket.on('webSocketServer', function(data) {
+				console.log(data);
+			});
+			
+			
+		</script>
+	</body>
+
+</html>
